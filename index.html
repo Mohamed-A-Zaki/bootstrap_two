@@ -42,7 +42,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact_us">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -163,7 +163,7 @@
             <img
               src="img/home-min.png"
               alt="image"
-              class="img-responsive center-block"
+              class="img-responsive center-block hidden-xs"
             />
           </div>
         </div>
@@ -460,35 +460,54 @@
     </div>
     <!-- End Stylish Section -->
     <!-- Start Contact Us  -->
-    <div class="contact_us text-center">
+    <div class="contact_us text-center" id="contact_us">
       <div class="container">
         <div class="main_heading">
           <h2>What Our Customers Are Saying</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="left wow animate__fadeInLeft" data-wow-duration="1s">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-              />
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left wow animate__fadeInLeft" data-wow-duration="1s">
+                <input
+                  type="text"
+                  class="form-control input-lg"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  class="form-control input-lg"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  class="form-control input-lg"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="right wow animate__fadeInRight"
+                data-wow-duration="1s"
+              >
+                <textarea
+                  class="form-control input-lg"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="right wow animate__fadeInRight" data-wow-duration="1s">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-              ></textarea>
-            </div>
-          </div>
-        </div>
+        </form>
         <a href="#" class="btn btn-primary">Send Message</a>
       </div>
     </div>
