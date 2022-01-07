@@ -1,12 +1,10 @@
 /* Start global rules */
 :root {
-  /* --main-color: #ff8b38; */
   --main-color: #00bcd4;
   --main-transition: 0.5s;
   --section-padding: 70px;
 }
 body {
-  height: 5000px;
   font-family: "Open Sans", sans-serif;
 }
 .main_heading h2 {
@@ -29,7 +27,6 @@ body {
   margin-top: 20px;
 }
 /* End global rules */
-
 /* Start navbar */
 .navbar.scrolled {
   background-color: rgb(0 0 0 / 70%);
@@ -41,7 +38,6 @@ body {
   color: var(--main-color);
 }
 /* End navbar */
-
 /* Start landing */
 .landing {
   background-image: url(../img/header-min.png);
@@ -127,7 +123,6 @@ body {
   border: none;
 }
 /* End landing */
-
 /* Start Social */
 .social .container {
   display: flex;
@@ -175,7 +170,6 @@ body {
   color: #eb4924;
 }
 /* End Social */
-
 /* Start Social Section */
 .tabs {
   padding-top: var(--section-padding);
@@ -218,7 +212,6 @@ body {
   font-weight: bold;
 }
 /* End Social Section */
-
 /* Start Sublist Section */
 .sub-list {
   padding-top: var(--section-padding);
@@ -271,7 +264,6 @@ body {
   align-items: center;
 }
 /* End Sublist Section */
-
 /* Start Standard Picture */
 .standard-picture {
   padding-top: var(--section-padding);
@@ -305,7 +297,6 @@ body {
   line-height: 1.7;
 }
 /* End Standard Picture */
-
 /* Start Awesome Section */
 .awesome {
   padding-top: var(--section-padding);
@@ -329,7 +320,6 @@ body {
   color: #999;
 }
 /* End Awesome Section */
-
 /* Start Pricing Options */
 .pricing {
   padding-top: var(--section-padding);
@@ -340,7 +330,7 @@ body {
   color: #fff;
   margin-top: 80px;
 }
-.pricing .content .item.special-item{
+.pricing .content .item.special-item {
   margin-top: -43px;
 }
 .pricing .content .item .title {
@@ -373,8 +363,6 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
-.pricing .content .item .options {
-}
 .pricing .content .item .options ul {
   background-color: #fff;
 }
@@ -386,3 +374,113 @@ body {
   border-bottom: 1px solid #f2f2f2;
 }
 /* End Pricing Options */
+/* Start Testimonials  */
+.testimonials {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.testimonials .item .text {
+  background-color: #f2f2f2;
+  padding: 10px;
+  line-height: 1.6;
+  color: #777;
+  position: relative;
+}
+.testimonials .item .text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-color: #f2f2f2 transparent transparent;
+  bottom: -30px;
+  left: 22px;
+}
+.testimonials .item .media {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  padding: 5px 0;
+}
+.testimonials .item .media span {
+  color: #777;
+}
+/* End Testimonials  */
+/* Start Stylish Section */
+.stylish {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../img/stylish-min.png);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.stylish::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  z-index: -1;
+}
+.stylish .main_heading h2::after {
+  background-color: #fff;
+}
+.stylish a {
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  transition: var(--main-transition);
+}
+.stylish a:hover {
+  background-color: var(--main-color);
+}
+/* End Stylish Section */
+/* Start Contact Us */
+.contact_us {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact_us .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_us .left input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+.contact_us .right textarea {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  height: 160px;
+  transition: var(--main-transition);
+}
+.contact_us .right textarea:focus {
+  box-shadow: 0px 0px 2px 1px rgb(0 188 212 / 50%);
+}
+.contact_us a {
+  margin-top: 20px;
+}
+/* End Contact Us */
+/* Start Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+}
+/* End Footer */
